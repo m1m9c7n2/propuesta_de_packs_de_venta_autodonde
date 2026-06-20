@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDonde - Propuesta de Packs de Venta</title>
+    <!-- Google Fonts: Montserrat & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: '#31595D',
+                        brandYellow: '#E6CA2D',
+                        brandOrange: '#E19327',
+                        brandGray: '#6F6E6E',
+                        brandLight: '#f4f7f6',
+                        brandDark: '#1A3336'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #31595D;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-brandLight text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Navigation Header -->
+    <header class="bg-brandGreen text-white shadow-md sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="isologo_AutoDonde_image356.png" alt="AutoDonde Logo" class="h-12 w-12 object-contain bg-white rounded-full p-0.5 shadow-inner" onerror="this.src='https://placehold.co/100x100/31595d/ffffff?text=AD'">
+                <div>
+                    <span class="font-montserrat font-extrabold text-lg sm:text-xl tracking-wider text-brandYellow">AUTODONDE</span>
+                    <span class="text-xs block text-brandLight opacity-80">Conectando el mercado automotor</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a href="#inicio" class="hover:text-brandYellow transition">Inicio</a>
+                <a href="#packs" class="hover:text-brandYellow transition">Packs Comerciales</a>
+                <a href="#simulador" class="hover:text-brandYellow transition">Simulador Ventas</a>
+                <a href="#argumentos" class="hover:text-brandYellow transition">Argumentos ROI</a>
+                <a href="#extras" class="hover:text-brandYellow transition">Extras</a>
+            </nav>
+
+            <div class="flex items-center space-x-2">
+                <a href="#contratar" class="bg-brandOrange hover:bg-opacity-90 text-white font-bold text-xs sm:text-sm px-4 py-2 rounded-lg transition shadow-md flex items-center gap-1.5">
+                    <i data-lucide="send" class="w-4 h-4"></i> Cotizar Pack
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner & Strategic Context -->
+    <section id="inicio" class="relative bg-gradient-to-br from-brandGreen via-brandGreen to-brandDark text-white py-12 md:py-20 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brandOrange/20 via-transparent to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 bg-brandYellow/10 text-brandYellow text-xs font-bold px-3 py-1.5 rounded-full border border-brandYellow/30">
+                    <span class="flex h-2.5 w-2.5 relative">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brandYellow opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brandYellow"></span>
+                    </span>
+                    PROPUESTA DE PACKS COMERCIALES 2026
+                </div>
+                <h1 class="font-montserrat font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-tight">
+                    Propuesta Comercial & Estrategia de Monetización
+                </h1>
+                <p class="text-brandLight text-base sm:text-lg max-w-2xl">
+                    Impulsamos la visibilidad y conversión en el mercado automotor regional argentino. Una propuesta diseñada especialmente para los presupuestos de concesionarios, talleres y PYMEs del interior del país.
+                </p>
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <div class="bg-white/10 backdrop-blur px-4 py-2 rounded-lg flex items-center gap-2 text-xs font-semibold">
+                        <i data-lucide="check-circle" class="text-brandYellow w-4 h-4"></i> Córdoba, Mendoza, Tucumán
+                    </div>
+                    <div class="bg-white/10 backdrop-blur px-4 py-2 rounded-lg flex items-center gap-2 text-xs font-semibold">
+                        <i data-lucide="trending-up" class="text-brandYellow w-4 h-4"></i> Nicho Automotor Especializado
+                    </div>
+                    <div class="bg-white/10 backdrop-blur px-4 py-2 rounded-lg flex items-center gap-2 text-xs font-semibold">
+                        <i data-lucide="shield" class="text-brandYellow w-4 h-4"></i> Soporte de Marca AutoDonde
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#packs" class="bg-brandYellow hover:bg-opacity-90 text-brandDark font-bold px-6 py-3 rounded-lg text-center transition shadow-lg">
+                        Ver Tabla de Planes
+                    </a>
+                    <a href="#simulador" class="border border-white/30 hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-lg text-center transition flex items-center justify-center gap-2">
+                        <i data-lucide="calculator" class="w-4 h-4"></i> Simulador de Ventas
+                    </a>
+                </div>
+            </div>
+
+            <!-- Logo Widget & Strategic Pillars -->
+            <div class="lg:col-span-5 bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 space-y-4">
+                <h3 class="text-brandYellow font-montserrat font-bold text-lg border-b border-white/10 pb-2">Pilares Estratégicos</h3>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 bg-brandOrange/20 rounded-lg text-brandOrange shrink-0">
+                            <i data-lucide="target" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm">Segmentación Clara</h4>
+                            <p class="text-xs text-brandLight/80">Planes adaptados a PYMEs, concesionarios y grandes tiendas de movilidad sustentable.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 bg-brandYellow/20 rounded-lg text-brandYellow shrink-0">
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm">Valor Percibido Elevado</h4>
+                            <p class="text-xs text-brandLight/80">Combinación de fichas de directorio, banners, publinotas y redes sociales.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 bg-blue-500/20 rounded-lg text-blue-400 shrink-0">
+                            <i data-lucide="coins" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm">Escalabilidad de Precios</h4>
+                            <p class="text-xs text-brandLight/80">Rangos competitivos adaptados a la realidad económica regional de Argentina.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Packs & Pricing section -->
+    <section id="packs" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="font-montserrat font-bold text-3xl text-brandGreen">Planes de Venta Comerciales</h2>
+                <p class="text-brandGray mt-2">
+                    Compará nuestros paquetes y seleccioná la estrategia ideal para tus anunciantes. Podés alternar entre las tarifas iniciales y las rentables recomendadas de lanzamiento.
+                </p>
+
+                <!-- Pricing View Toggle -->
+                <div class="inline-flex items-center gap-2 bg-brandLight p-1.5 rounded-xl border border-slate-200 mt-6 shadow-sm">
+                    <button onclick="switchPricing('inicial')" id="btn-pricing-inicial" class="px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-300 bg-white text-brandGreen shadow">
+                        Tarifa Base Sugerida
+                    </button>
+                    <button onclick="switchPricing('rentable')" id="btn-pricing-rentable" class="px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-300 text-brandGray hover:text-brandGreen">
+                        Tarifa Rentable Recomendada 🚀
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                
+                <!-- Pack Bronce -->
+                <div class="border border-slate-200 rounded-2xl p-6 bg-white flex flex-col justify-between transition-all hover:shadow-xl hover:border-brandGreen relative group">
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-brandGray tracking-wider uppercase">Esencial</span>
+                            <span class="p-1.5 bg-slate-100 rounded text-slate-600"><i data-lucide="award" class="w-4 h-4"></i></span>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-xl text-slate-800">Pack Bronce</h3>
+                        <p class="text-xs text-brandGray mt-1">Presencia digital inicial y efectiva para marcas locales.</p>
+                        
+                        <div class="my-5">
+                            <span class="text-slate-400 text-sm font-bold">$</span>
+                            <span id="price-bronce" class="font-montserrat font-extrabold text-3xl text-brandGreen">4.500</span>
+                            <span class="text-xs font-semibold text-brandGray"> / mes ARS</span>
+                            <div class="text-xs text-brandGray/80 mt-1" id="price-sub-bronce">Sugerido según provincia</div>
+                        </div>
+
+                        <hr class="border-slate-100 my-4">
+
+                        <ul class="space-y-3 text-xs text-slate-700">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandGreen shrink-0 mt-0.5"></i>
+                                <span>Ficha de Directorio básica verificada (posición estándar)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandGreen shrink-0 mt-0.5"></i>
+                                <span>Marketplace: <strong class="text-brandGreen">3 avisos</strong> destacados al mes</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandGreen shrink-0 mt-0.5"></i>
+                                <span>Blog: Mención en nota colectiva temática</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-slate-400">
+                                <i data-lucide="x-circle" class="w-4 h-4 shrink-0 mt-0.5"></i>
+                                <span>Galería de fotos & botón WhatsApp</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-50">
+                        <div class="text-xs text-brandGray mb-3 flex items-center justify-between">
+                            <span>Contrato mínimo:</span>
+                            <span class="font-bold">3 meses</span>
+                        </div>
+                        <button onclick="selectPack('Bronce')" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition">
+                            Seleccionar Pack
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pack Plata -->
+                <div class="border-2 border-brandGreen rounded-2xl p-6 bg-white flex flex-col justify-between transition-all hover:shadow-xl relative group">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-brandGreen text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        MÁS RECOMENDADO
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-brandGreen tracking-wider uppercase">Crecimiento</span>
+                            <span class="p-1.5 bg-brandGreen/10 rounded text-brandGreen"><i data-lucide="sparkles" class="w-4 h-4"></i></span>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-xl text-brandGreen">Pack Plata</h3>
+                        <p class="text-xs text-brandGray mt-1">Perfecto para negocios automotores medianos en expansión.</p>
+                        
+                        <div class="my-5">
+                            <span class="text-slate-400 text-sm font-bold">$</span>
+                            <span id="price-plata" class="font-montserrat font-extrabold text-3xl text-brandGreen">9.000</span>
+                            <span class="text-xs font-semibold text-brandGray"> / mes ARS</span>
+                            <div class="text-xs text-brandGreen/80 mt-1 font-semibold" id="price-sub-plata">Descuento 10% por pago anual</div>
+                        </div>
+
+                        <hr class="border-slate-100 my-4">
+
+                        <ul class="space-y-3 text-xs text-slate-700">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandGreen shrink-0 mt-0.5"></i>
+                                <span>Ficha de Directorio completa + <strong class="text-brandGreen">Botón WhatsApp</strong></span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandGreen shrink-0 mt-0.5"></i>
+                                <span>Marketplace: <strong class="text-brandGreen">10 avisos</strong>, renovación semanal</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandGreen shrink-0 mt-0.5"></i>
+                                <span>Blog: <strong class="text-brandGreen">1 publinota mensual</strong> (review/entrevista)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandGreen shrink-0 mt-0.5"></i>
+                                <span>Banners: Banner lateral rotativo en blog</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandGreen shrink-0 mt-0.5"></i>
+                                <span>Social: 1 post + 2 historias mensuales</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-50">
+                        <div class="text-xs text-brandGray mb-3 flex items-center justify-between">
+                            <span>Soporte:</span>
+                            <span class="font-bold">WhatsApp Directo</span>
+                        </div>
+                        <button onclick="selectPack('Plata')" class="w-full bg-brandGreen hover:bg-opacity-95 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition">
+                            Seleccionar Pack
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pack Oro -->
+                <div class="border border-slate-200 rounded-2xl p-6 bg-slate-900 text-white flex flex-col justify-between transition-all hover:shadow-xl relative group">
+                    <div class="absolute -top-3 right-4 bg-brandOrange text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase">
+                        PREMIUM
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-brandOrange tracking-wider uppercase">Líder de Mercado</span>
+                            <span class="p-1.5 bg-white/10 rounded text-brandYellow"><i data-lucide="trophy" class="w-4 h-4"></i></span>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-xl text-white">Pack Oro</h3>
+                        <p class="text-xs text-slate-400 mt-1">Para concesionarias que dominan el mercado digital.</p>
+                        
+                        <div class="my-5">
+                            <span class="text-slate-500 text-sm font-bold">$</span>
+                            <span id="price-oro" class="font-montserrat font-extrabold text-3xl text-brandYellow">18.000</span>
+                            <span class="text-xs font-semibold text-slate-400"> / mes ARS</span>
+                            <div class="text-xs text-brandYellow/80 mt-1 font-semibold" id="price-sub-oro">1 Mes de regalo contratando 6 meses</div>
+                        </div>
+
+                        <hr class="border-white/10 my-4">
+
+                        <ul class="space-y-3 text-xs text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandYellow shrink-0 mt-0.5"></i>
+                                <span>Posición #1 Fija en Directorio (Sponsor)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandYellow shrink-0 mt-0.5"></i>
+                                <span>Marketplace: <strong class="text-white">Ilimitados</strong> + Carrusel Ofertas</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandYellow shrink-0 mt-0.5"></i>
+                                <span>Blog: <strong class="text-white">2 notas exclusivas</strong> (test-drive/lanzamientos)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandYellow shrink-0 mt-0.5"></i>
+                                <span>Banner Principal (Hero) rotativo en Home</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandYellow shrink-0 mt-0.5"></i>
+                                <span>Logo Sponsor en "Movilidad Sustentable"</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandYellow shrink-0 mt-0.5"></i>
+                                <span>Espacio destacado en Newsletter mensual</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-white/10">
+                        <div class="text-xs text-slate-400 mb-3 flex items-center justify-between">
+                            <span>Soporte prioritario:</span>
+                            <span class="font-bold text-white">Full 24/7</span>
+                        </div>
+                        <button onclick="selectPack('Oro')" class="w-full bg-brandOrange hover:bg-opacity-95 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition">
+                            Seleccionar Pack
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pack Socio Fundador -->
+                <div class="border border-brandOrange/30 rounded-2xl p-6 bg-brandLight flex flex-col justify-between transition-all hover:shadow-xl relative group">
+                    <div class="absolute -top-3 left-4 bg-brandOrange text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        LANZAMIENTO LIMITADO
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-brandOrange tracking-wider uppercase">Socio Fundador</span>
+                            <span class="p-1.5 bg-brandOrange/10 rounded text-brandOrange"><i data-lucide="rocket" class="w-4 h-4"></i></span>
+                        </div>
+                        <h3 class="font-montserrat font-bold text-xl text-slate-800">Socio Fundador</h3>
+                        <p class="text-xs text-brandGray mt-1">Inversión inicial única con beneficios extraordinarios de largo plazo.</p>
+                        
+                        <div class="my-5">
+                            <span class="text-slate-400 text-sm font-bold">$</span>
+                            <span id="price-fundador" class="font-montserrat font-extrabold text-3xl text-brandOrange">25.000</span>
+                            <span class="text-xs font-semibold text-brandGray"> Tarifa Única</span>
+                            <div class="text-xs text-brandOrange mt-1 font-semibold" id="price-sub-fundador">Paga Plata y recibe Oro por 6 meses</div>
+                        </div>
+
+                        <hr class="border-slate-200 my-4">
+
+                        <ul class="space-y-3 text-xs text-slate-700">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandOrange shrink-0 mt-0.5"></i>
+                                <span><strong class="text-brandOrange">6 Meses</strong> de beneficios de Pack ORO completo</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandOrange shrink-0 mt-0.5"></i>
+                                <span>Producción de 2 notas de blog con fotos</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandOrange shrink-0 mt-0.5"></i>
+                                <span>Diseño bonificado de 1 banner Hero y newsletter</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-brandOrange shrink-0 mt-0.5"></i>
+                                <span>Asistencia de redacción copywriting incluida</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-200">
+                        <div class="text-xs text-brandGray mb-3 flex items-center justify-between">
+                            <span>Disponibilidad:</span>
+                            <span class="font-bold text-brandOrange">Solo 10 cupos</span>
+                        </div>
+                        <button onclick="selectPack('Socio Fundador')" class="w-full bg-brandOrange hover:bg-opacity-95 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition">
+                            Asegurar Cupo
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Extras a la Carta section -->
+    <section id="extras" class="py-12 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+                <div>
+                    <h3 class="font-montserrat font-bold text-2xl text-brandGreen">Adicionales & Extras a la Carta</h3>
+                    <p class="text-sm text-brandGray">Complementá los packs de tus clientes con herramientas premium de visibilidad específica.</p>
+                </div>
+                <div class="mt-4 md:mt-0 text-xs text-brandGreen font-bold bg-brandGreen/10 px-3 py-1.5 rounded-full border border-brandGreen/20 flex items-center gap-1.5 self-start">
+                    <i data-lucide="info" class="w-4 h-4"></i> Facturados por unidad / mes
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Ad 1 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="p-2 bg-brandGreen/10 text-brandGreen rounded-lg"><i data-lucide="image" class="w-5 h-5"></i></span>
+                        <h4 class="font-bold text-slate-800 text-sm">Banner Premium</h4>
+                    </div>
+                    <p class="text-xs text-brandGray mb-4">Ubicación Full-Width en página de inicio por 2 semanas completas.</p>
+                    <div class="flex items-center justify-between border-t border-slate-100 pt-3">
+                        <span class="text-xs text-brandGray">Precio sugerido</span>
+                        <span class="font-montserrat font-bold text-brandGreen text-base" id="extra-banner-price">$3.500 ARS</span>
+                    </div>
+                </div>
+                <!-- Ad 2 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="p-2 bg-brandGreen/10 text-brandGreen rounded-lg"><i data-lucide="video" class="w-5 h-5"></i></span>
+                        <h4 class="font-bold text-slate-800 text-sm">Video Spot (30s)</h4>
+                    </div>
+                    <p class="text-xs text-brandGray mb-4">Producción del clip y publicación optimizada en la sección de videos del portal.</p>
+                    <div class="flex items-center justify-between border-t border-slate-100 pt-3">
+                        <span class="text-xs text-brandGray">Precio sugerido</span>
+                        <span class="font-montserrat font-bold text-brandGreen text-base" id="extra-video-price">$5.000 ARS</span>
+                    </div>
+                </div>
+                <!-- Ad 3 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="p-2 bg-brandGreen/10 text-brandGreen rounded-lg"><i data-lucide="mail" class="w-5 h-5"></i></span>
+                        <h4 class="font-bold text-slate-800 text-sm">Newsletter Patrocinado</h4>
+                    </div>
+                    <p class="text-xs text-brandGray mb-4">Envío directo de oferta segmentada a 5.000 contactos del sector automotor.</p>
+                    <div class="flex items-center justify-between border-t border-slate-100 pt-3">
+                        <span class="text-xs text-brandGray">Precio sugerido</span>
+                        <span class="font-montserrat font-bold text-brandGreen text-base" id="extra-news-price">$2.500 ARS</span>
+                    </div>
+                </div>
+                <!-- Ad 4 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="p-2 bg-brandGreen/10 text-brandGreen rounded-lg"><i data-lucide="bar-chart-2" class="w-5 h-5"></i></span>
+                        <h4 class="font-bold text-slate-800 text-sm">Reporte de Analytics</h4>
+                    </div>
+                    <p class="text-xs text-brandGray mb-4">Monitoreo y métricas detalladas mensuales de clics, impresiones y leads.</p>
+                    <div class="flex items-center justify-between border-t border-slate-100 pt-3">
+                        <span class="text-xs text-brandGray">Precio sugerido</span>
+                        <span class="font-montserrat font-bold text-brandGreen text-base" id="extra-report-price">$1.200 ARS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Sales Simulator (Breakeven Tool) -->
+    <section id="simulador" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-brandGreen text-white rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-32 -bottom-32 w-96 h-96 bg-brandOrange/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -left-32 -top-32 w-96 h-96 bg-brandYellow/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="bg-brandOrange text-white text-xs font-bold px-3 py-1 rounded-full w-max uppercase tracking-wider">
+                            Planificación Comercial
+                        </div>
+                        <h3 class="font-montserrat font-bold text-2xl md:text-3xl">Simulador de Punto de Equilibrio</h3>
+                        <p class="text-sm text-brandLight/80">
+                            Para mantener el portal operativo y rentable con equipo de ventas, infraestructura en la nube y marketing, necesitamos generar una facturación mínima mensual de:
+                        </p>
+                        <div class="bg-white/10 border border-white/20 p-4 rounded-xl flex items-center justify-between">
+                            <div>
+                                <span class="text-xs block text-brandLight/60">Costo Operativo Mensual</span>
+                                <span class="font-montserrat font-extrabold text-2xl text-brandYellow">$1.350.000 ARS</span>
+                            </div>
+                            <i data-lucide="trending-up" class="w-8 h-8 text-brandYellow"></i>
+                        </div>
+                        
+                        <div class="text-xs space-y-2 text-brandLight/80 bg-black/20 p-3 rounded-lg border border-white/5">
+                            <h4 class="font-bold text-brandYellow">¿Cómo calculamos este costo?</h4>
+                            <div class="flex justify-between"><span>Sueldo Ventas + Leyes:</span> <span>$1.040.000</span></div>
+                            <div class="flex justify-between"><span>Infraestructura Cloud (VPS + SSL):</span> <span>$20.000</span></div>
+                            <div class="flex justify-between"><span>Herramientas de Mail & Analytics:</span> <span>$15.000</span></div>
+                            <div class="flex justify-between"><span>Diseño de Banners Tercerizado:</span> <span>$60.000</span></div>
+                            <div class="flex justify-between"><span>Pauta Publicitaria de Captación:</span> <span>$75.000</span></div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 bg-white text-slate-800 p-6 rounded-2xl shadow-lg space-y-6">
+                        <h4 class="font-montserrat font-bold text-lg text-brandGreen border-b border-slate-100 pb-2">Proyección de Ventas Mensuales</h4>
+                        
+                        <div class="space-y-4">
+                            <!-- Bronce slider -->
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span class="text-slate-700">Cant. Pack Bronce (<span id="sim-bronce-price-tag">$4.500</span>)</span>
+                                    <span class="text-brandGreen"><span id="val-bronce">25</span> unidades</span>
+                                </div>
+                                <input type="range" id="input-bronce" min="0" max="150" value="25" oninput="calculateSimulator()" class="w-full accent-brandGreen h-2 bg-slate-200 rounded-lg cursor-pointer">
+                            </div>
+
+                            <!-- Plata slider -->
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span class="text-slate-700">Cant. Pack Plata (<span id="sim-plata-price-tag">$9.000</span>)</span>
+                                    <span class="text-brandGreen"><span id="val-plata">20</span> unidades</span>
+                                </div>
+                                <input type="range" id="input-plata" min="0" max="100" value="20" oninput="calculateSimulator()" class="w-full accent-brandGreen h-2 bg-slate-200 rounded-lg cursor-pointer">
+                            </div>
+
+                            <!-- Oro slider -->
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span class="text-slate-700">Cant. Pack Oro (<span id="sim-oro-price-tag">$18.000</span>)</span>
+                                    <span class="text-brandGreen"><span id="val-oro">15</span> unidades</span>
+                                </div>
+                                <input type="range" id="input-oro" min="0" max="50" value="15" oninput="calculateSimulator()" class="w-full accent-brandGreen h-2 bg-slate-200 rounded-lg cursor-pointer">
+                            </div>
+
+                            <!-- Socio Fundador slider -->
+                            <div>
+                                <div class="flex justify-between text-xs font-bold mb-1">
+                                    <span class="text-slate-700">Cant. Socio Fundador (<span id="sim-fundador-price-tag">$25.000</span>)</span>
+                                    <span class="text-brandGreen"><span id="val-fundador">10</span> unidades</span>
+                                </div>
+                                <input type="range" id="input-fundador" min="0" max="30" value="10" oninput="calculateSimulator()" class="w-full accent-brandGreen h-2 bg-slate-200 rounded-lg cursor-pointer">
+                            </div>
+                        </div>
+
+                        <!-- Results display -->
+                        <div class="bg-brandLight p-4 rounded-xl border border-slate-200 grid grid-cols-2 gap-4">
+                            <div>
+                                <span class="text-[10px] uppercase font-bold text-brandGray block">Ingresos Estimados</span>
+                                <span id="total-revenue" class="font-montserrat font-extrabold text-xl sm:text-2xl text-brandGreen">$1.020.000</span>
+                            </div>
+                            <div>
+                                <span class="text-[10px] uppercase font-bold text-brandGray block">Estado Financiero</span>
+                                <span id="financial-status" class="font-montserrat font-bold text-sm sm:text-base px-2 py-1 rounded inline-block text-red-600 bg-red-100">Déficit: -$330.000</span>
+                            </div>
+                        </div>
+
+                        <div class="text-xs text-brandGray bg-slate-50 p-3 rounded-lg border border-dashed border-slate-200 flex items-start gap-2">
+                            <i data-lucide="lightbulb" class="text-brandOrange w-4 h-4 shrink-0 mt-0.5 animate-pulse"></i>
+                            <span id="simulator-advice">¡Estás cerca de cubrir los costos operativos! Incrementá la cantidad de Pack Plata u Oro para lograr superávit operativo.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Value & Sales Objections (Acerca del precio de $3.000 vs $6.000) -->
+    <section id="argumentos" class="py-16 bg-brandLight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="font-montserrat font-bold text-3xl text-brandGreen">Por qué nuestros packs tienen alto valor percibido</h2>
+                <p class="text-brandGray mt-2">Fundamentos económicos y técnicos para justificar los precios ante los anunciantes regionales.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                
+                <!-- Pricing Arguments Tabs -->
+                <div class="lg:col-span-7 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-montserrat font-bold text-lg text-slate-800 mb-4 flex items-center gap-2">
+                            <i data-lucide="message-square" class="text-brandOrange w-5 h-5"></i> Respuestas clave para el pitch de ventas
+                        </h3>
+
+                        <!-- Tabs structure -->
+                        <div class="flex border-b border-slate-200 mb-4 overflow-x-auto custom-scrollbar">
+                            <button onclick="toggleTab('tab-cambio')" id="btn-tab-cambio" class="py-2 px-3 text-xs font-bold border-b-2 border-brandGreen text-brandGreen whitespace-nowrap">Tipo de Cambio</button>
+                            <button onclick="toggleTab('tab-mercado')" id="btn-tab-mercado" class="py-2 px-3 text-xs font-bold border-b-2 border-transparent text-brandGray hover:text-brandGreen whitespace-nowrap">Mercado Local</button>
+                            <button onclick="toggleTab('tab-cpm')" id="btn-tab-cpm" class="py-2 px-3 text-xs font-bold border-b-2 border-transparent text-brandGray hover:text-brandGreen whitespace-nowrap">Modelo CPM</button>
+                            <button onclick="toggleTab('tab-comparativa')" id="btn-tab-comparativa" class="py-2 px-3 text-xs font-bold border-b-2 border-transparent text-brandGray hover:text-brandGreen whitespace-nowrap">Comparativa Global</button>
+                        </div>
+
+                        <!-- Tab contents -->
+                        <div id="tab-cambio" class="tab-content text-xs text-slate-700 space-y-3 leading-relaxed">
+                            <p class="font-semibold text-brandGreen">Entendiendo el tipo de cambio real (Junio 2026):</p>
+                            <p>Tomando un tipo de cambio de referencia de <strong>1 USD ≈ 1.450 ARS</strong>, el pack inicial de $3.000 ARS equivale aproximadamente a <strong>US$ 2.10</strong>.</p>
+                            <p>Esta conversión nos permite ver que el costo es extremadamente accesible para cualquier comercio registrado. Incluso incrementando el valor a $6.000 ARS, la inversión del anunciante sigue estando por debajo de los 4.5 USD al mes, lo que simplifica la aprobación presupuestaria del cliente.</p>
+                        </div>
+
+                        <div id="tab-mercado" class="tab-content hidden text-xs text-slate-700 space-y-3 leading-relaxed">
+                            <p class="font-semibold text-brandGreen">Dinámica comercial de las provincias del interior de Argentina:</p>
+                            <p>En plazas como Mendoza, Córdoba o Tucumán, los talleres mecánicos, casas de repuestos y pequeños concesionarios locales manejan presupuestos en pesos.</p>
+                            <p>Ofrecer precios estables en moneda nacional evita el rechazo psicológico que genera la cotización directa en dólares, aumentando la tasa de renovación y retención a largo plazo.</p>
+                        </div>
+
+                        <div id="tab-cpm" class="tab-content hidden text-xs text-slate-700 space-y-3 leading-relaxed">
+                            <p class="font-semibold text-brandGreen">Fórmula de Visibilidad CPM (Costo por mil impresiones):</p>
+                            <p>Para un portal de nicho que promedia unas <strong>30.000 visitas mensuales</strong>, un banner full-width genera un alto caudal de impresiones directas en su target.</p>
+                            <p>Establecer un CPM competitivo de <strong>US$ 2 a 3</strong> se traduce en tarifas de banner de $3.000 a $4.500 ARS. Este cálculo técnico nos sirve de respaldo para demostrar que no es un precio arbitrario, sino una métrica alineada con estándares reales de marketing digital.</p>
+                        </div>
+
+                        <div id="tab-comparativa" class="tab-content hidden text-xs text-slate-700 space-y-3 leading-relaxed">
+                            <p class="font-semibold text-brandGreen">La escala de nicho comparada internacionalmente:</p>
+                            <p>En mercados maduros como EE.UU., un banner premium en portales de alta densidad de visitas cobra CPMs superiores a los 5-10 USD, traduciéndose en miles de dólares.</p>
+                            <p>Redimensionando al volumen de tráfico calificado de nuestra región, la estructura tarifaria de AutoDonde representa un punto de entrada inmejorable con alta rentabilidad para los anunciantes locales.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2">
+                        <div class="flex items-center gap-1.5 text-xs text-brandGray">
+                            <i data-lucide="check-square" class="text-brandGreen w-4 h-4"></i> Respaldado por el Manual de Marca 2026
+                        </div>
+                        <a href="#contratar" class="text-xs text-brandOrange font-bold hover:underline flex items-center gap-1">
+                            Ver cotizador para clientes <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ROI Calculator for clients -->
+                <div class="lg:col-span-5 bg-brandGreen text-white p-6 rounded-2xl border border-white/10 flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="p-1.5 bg-brandYellow/10 rounded text-brandYellow"><i data-lucide="percent" class="w-5 h-5"></i></span>
+                            <h3 class="font-montserrat font-bold text-lg">Calculadora de ROI del Anunciante</h3>
+                        </div>
+                        <p class="text-xs text-brandLight/80 mb-4">
+                            Ingresá las visitas estimadas mensuales de tu banner para calcular cuántos clientes potenciales (leads) puede generar tu inversión.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label class="text-xs text-brandLight/60 block mb-1">Impresiones Mensuales Estimadas</label>
+                                <input type="number" id="roi-impressions" value="15000" oninput="calculateROI()" class="w-full bg-white/10 border border-white/20 rounded-lg p-2 text-sm text-white font-semibold focus:outline-none focus:border-brandYellow">
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="text-xs text-brandLight/60 block mb-1">CTR de Banner (%)</label>
+                                    <input type="number" id="roi-ctr" value="1.5" step="0.1" oninput="calculateROI()" class="w-full bg-white/10 border border-white/20 rounded-lg p-2 text-sm text-white font-semibold focus:outline-none focus:border-brandYellow">
+                                </div>
+                                <div>
+                                    <label class="text-xs text-brandLight/60 block mb-1">Tasa de Conversión a Lead (%)</label>
+                                    <input type="number" id="roi-conversion" value="10" step="1" oninput="calculateROI()" class="w-full bg-white/10 border border-white/20 rounded-lg p-2 text-sm text-white font-semibold focus:outline-none focus:border-brandYellow">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ROI Output -->
+                        <div class="bg-black/30 border border-white/10 p-4 rounded-xl my-5 text-center">
+                            <span class="text-xs text-brandLight/60 block">Clientes Potenciales (Leads) Generados / mes</span>
+                            <span id="roi-leads" class="font-montserrat font-extrabold text-3xl text-brandYellow">22</span>
+                            <span class="text-xs block text-brandLight/80 mt-1">Con costo de adquisición altamente competitivo</span>
+                        </div>
+                    </div>
+
+                    <div class="text-[10px] text-brandLight/60 text-center border-t border-white/5 pt-3 italic">
+                        "Convertir visitas en llamadas o mensajes de WhatsApp directos."
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout and Booking Wizard -->
+    <section id="contratar" class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-lg bg-white relative">
+                
+                <div class="text-center mb-8">
+                    <img src="isologo_AutoDonde_image356.png" alt="AutoDonde" class="mx-auto h-16 w-16 mb-2 rounded-full shadow" onerror="this.src='https://placehold.co/100x100/31595d/ffffff?text=AD'">
+                    <h2 class="font-montserrat font-bold text-2xl text-brandGreen">Cotizar & Contratar tu Pack</h2>
+                    <p class="text-brandGray text-xs sm:text-sm">Configurá la visibilidad de tu marca y recibí un presupuesto digital instantáneo.</p>
+                </div>
+
+                <!-- Multi-step Form -->
+                <form id="pack-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    
+                    <!-- Form Step 1: Pack choice -->
+                    <div class="space-y-3">
+                        <label class="text-xs font-bold text-slate-700 block uppercase tracking-wider">1. Elegí tu Pack Principal</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <label class="border-2 border-slate-200 rounded-xl p-3 flex flex-col justify-between items-center text-center cursor-pointer hover:border-brandGreen transition select-none" id="label-pack-bronce">
+                                <input type="radio" name="selected_pack" value="Bronce" checked onclick="updateFormCosts()" class="sr-only">
+                                <span class="font-bold text-sm text-slate-800">Bronce</span>
+                                <span class="text-xs text-brandGreen font-bold mt-1" id="form-bronce-price">$4.500/m</span>
+                            </label>
+                            
+                            <label class="border-2 border-brandGreen rounded-xl p-3 flex flex-col justify-between items-center text-center cursor-pointer hover:border-brandGreen transition select-none" id="label-pack-plata">
+                                <input type="radio" name="selected_pack" value="Plata" onclick="updateFormCosts()" class="sr-only">
+                                <span class="font-bold text-sm text-slate-800">Plata</span>
+                                <span class="text-xs text-brandGreen font-bold mt-1" id="form-plata-price">$9.000/m</span>
+                            </label>
+
+                            <label class="border-2 border-slate-200 rounded-xl p-3 flex flex-col justify-between items-center text-center cursor-pointer hover:border-brandGreen transition select-none" id="label-pack-oro">
+                                <input type="radio" name="selected_pack" value="Oro" onclick="updateFormCosts()" class="sr-only">
+                                <span class="font-bold text-sm text-slate-800">Oro</span>
+                                <span class="text-xs text-brandGreen font-bold mt-1" id="form-oro-price">$18.000/m</span>
+                            </label>
+
+                            <label class="border-2 border-slate-200 rounded-xl p-3 flex flex-col justify-between items-center text-center cursor-pointer hover:border-brandGreen transition select-none" id="label-pack-fundador">
+                                <input type="radio" name="selected_pack" value="Fundador" onclick="updateFormCosts()" class="sr-only">
+                                <span class="font-bold text-sm text-slate-800">Fundador</span>
+                                <span class="text-xs text-brandGreen font-bold mt-1" id="form-fundador-price">$25.000/u</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Form Step 2: Extras checklist -->
+                    <div class="space-y-3 pt-2">
+                        <label class="text-xs font-bold text-slate-700 block uppercase tracking-wider">2. Seleccioná Adicionales (Extras)</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                            <label class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-100 transition">
+                                <input type="checkbox" id="add-banner" onchange="updateFormCosts()" class="rounded text-brandGreen focus:ring-brandGreen h-4 w-4">
+                                <div>
+                                    <span class="font-semibold block text-slate-800">Banner Premium (+<span id="form-extra-banner">$3.500</span>)</span>
+                                    <span class="text-brandGray text-[10px]">Visibilidad destacada en Home</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-100 transition">
+                                <input type="checkbox" id="add-video" onchange="updateFormCosts()" class="rounded text-brandGreen focus:ring-brandGreen h-4 w-4">
+                                <div>
+                                    <span class="font-semibold block text-slate-800">Video Spot (+<span id="form-extra-video">$5.000</span>)</span>
+                                    <span class="text-brandGray text-[10px]">Edición y distribución de clip</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-100 transition">
+                                <input type="checkbox" id="add-news" onchange="updateFormCosts()" class="rounded text-brandGreen focus:ring-brandGreen h-4 w-4">
+                                <div>
+                                    <span class="font-semibold block text-slate-800">Newsletter Patrocinado (+<span id="form-extra-news">$2.500</span>)</span>
+                                    <span class="text-brandGray text-[10px]">Envío masivo directo segmentado</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:bg-slate-100 transition">
+                                <input type="checkbox" id="add-report" onchange="updateFormCosts()" class="rounded text-brandGreen focus:ring-brandGreen h-4 w-4">
+                                <div>
+                                    <span class="font-semibold block text-slate-800">Reporte Analytics (+<span id="form-extra-report">$1.200</span>)</span>
+                                    <span class="text-brandGray text-[10px]">Métricas e informes detallados</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Form Step 3: Client Details -->
+                    <div class="space-y-4 pt-2">
+                        <label class="text-xs font-bold text-slate-700 block uppercase tracking-wider">3. Datos de Contacto</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-[10px] uppercase font-bold text-brandGray block mb-1">Nombre Comercial del Cliente</label>
+                                <input type="text" required placeholder="Ej: Concesionario Mendoza Autos" class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:border-brandGreen">
+                            </div>
+                            <div>
+                                <label class="text-[10px] uppercase font-bold text-brandGray block mb-1">Localidad / Provincia</label>
+                                <input type="text" required placeholder="Ej: Córdoba Capital" class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:border-brandGreen">
+                            </div>
+                            <div>
+                                <label class="text-[10px] uppercase font-bold text-brandGray block mb-1">Correo Electrónico</label>
+                                <input type="email" required placeholder="contacto@empresa.com" class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:border-brandGreen">
+                            </div>
+                            <div>
+                                <label class="text-[10px] uppercase font-bold text-brandGray block mb-1">Teléfono o WhatsApp</label>
+                                <input type="tel" required placeholder="Ej: +54 9 351..." class="w-full border border-slate-300 rounded-lg p-2.5 text-sm focus:outline-none focus:border-brandGreen">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Checkout Total summary -->
+                    <div class="bg-brandLight border border-slate-200 p-5 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs text-brandGray block font-bold">Total Mensual Estimado</span>
+                            <div class="flex items-baseline gap-1.5">
+                                <span class="font-montserrat font-extrabold text-2xl text-brandGreen" id="form-total-cost">$4.500</span>
+                                <span class="text-xs text-brandGray">ARS / mes</span>
+                            </div>
+                            <span class="text-[10px] text-brandGreen block font-semibold mt-0.5" id="form-contract-detail">Contrato estándar de 3 meses</span>
+                        </div>
+                        <button type="submit" class="w-full sm:w-auto bg-brandOrange hover:bg-opacity-95 text-white font-bold px-8 py-3 rounded-xl transition shadow-lg flex items-center justify-center gap-2 text-sm">
+                            <i data-lucide="check-circle" class="w-5 h-5"></i> Registrar Propuesta
+                        </button>
+                    </div>
+
+                </form>
+
+                <!-- Status Feedback Message -->
+                <div id="form-feedback" class="hidden absolute inset-0 bg-white/95 backdrop-blur-sm rounded-3xl flex flex-col items-center justify-center text-center p-6 transition-all duration-500">
+                    <div class="w-16 h-16 bg-brandGreen/10 text-brandGreen rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="check" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-montserrat font-bold text-xl text-brandGreen">¡Propuesta registrada exitosamente!</h3>
+                    <p class="text-brandGray text-xs sm:text-sm max-w-sm mt-2">
+                        El equipo comercial de AutoDonde.com se comunicará a la brevedad con el cliente para validar el medio de pago (MercadoPago o PayU) y dar de alta su campaña.
+                    </p>
+                    <button onclick="resetForm()" class="mt-6 text-xs text-brandOrange font-bold border border-brandOrange/30 hover:bg-brandOrange/5 px-4 py-2 rounded-lg transition">
+                        Crear Otra Propuesta
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brandDark text-white mt-auto pt-12 pb-6 border-t-4 border-brandOrange">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-white/10">
+                
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <img src="isologo_AutoDonde_image356.png" alt="AutoDonde Logo" class="h-10 w-10 object-contain bg-white rounded-full p-0.5 shadow-inner" onerror="this.src='https://placehold.co/100x100/31595d/ffffff?text=AD'">
+                        <span class="font-montserrat font-extrabold text-lg text-brandYellow">AUTODONDE</span>
+                    </div>
+                    <p class="text-xs text-brandLight/70 leading-relaxed">
+                        Plataforma especializada en el sector automotor que combina un directorio profesional premium, un marketplace dinámico y un blog líder sobre movilidad sustentable.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-montserrat font-bold text-sm text-brandYellow">Documentos de Referencia</h4>
+                    <ul class="text-xs text-brandLight/70 space-y-2">
+                        <li>Packs Precios e8bb2050e...md</li>
+                        <li>Paquetes de Venta y Rubros Prioritarios.md</li>
+                        <li>Ventajas de vender en web de nicho.md</li>
+                        <li>Manual de Marca autodonde.com</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-montserrat font-bold text-sm text-brandYellow">Objetivo del Proyecto</h4>
+                    <p class="text-xs text-brandLight/70 leading-relaxed">
+                        Garantizar ingresos recurrentes, aportar valor a anunciantes regionales y posicionar la marca AutoDonde como el referente digital automotriz de la región.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-brandLight/50 gap-4">
+                <span>© 2026 autodonde.com. Todos los derechos reservados.</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="shield" class="w-4 h-4"></i> Operación Regional Argentina</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Logic for Pricing switches, ROI Calculations, Interactive simulator & Form submission -->
+    <script>
+        // Set Lucide Icons
+        lucide.createIcons();
+
+        // State & Data
+        let currentPricingTier = 'inicial'; // 'inicial' or 'rentable'
+        
+        // Define price matrix
+        const prices = {
+            inicial: {
+                bronce: 4500,
+                plata: 9000,
+                oro: 18000,
+                fundador: 25000,
+                extraBanner: 3500,
+                extraVideo: 5000,
+                extraNews: 2500,
+                extraReport: 1200
+            },
+            rentable: {
+                bronce: 6000,
+                plata: 12000,
+                oro: 20000,
+                fundador: 30000,
+                extraBanner: 8000,
+                extraVideo: 5000,
+                extraNews: 2500,
+                extraReport: 1200
+            }
+        };
+
+        // Switch pricing matrix
+        function switchPricing(tier) {
+            currentPricingTier = tier;
+
+            const btnInicial = document.getElementById('btn-pricing-inicial');
+            const btnRentable = document.getElementById('btn-pricing-rentable');
+
+            if (tier === 'inicial') {
+                btnInicial.className = 'px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-300 bg-white text-brandGreen shadow';
+                btnRentable.className = 'px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-300 text-brandGray hover:text-brandGreen';
+            } else {
+                btnInicial.className = 'px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-300 text-brandGray hover:text-brandGreen';
+                btnRentable.className = 'px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg transition-all duration-300 bg-white text-brandGreen shadow';
+            }
+
+            updatePriceDisplay();
+            calculateSimulator();
+            updateFormCosts();
+        }
+
+        // Update active pricing text & numbers on cards
+        function updatePriceDisplay() {
+            const matrix = prices[currentPricingTier];
+
+            document.getElementById('price-bronce').innerText = formatPrice(matrix.bronce);
+            document.getElementById('price-plata').innerText = formatPrice(matrix.plata);
+            document.getElementById('price-oro').innerText = formatPrice(matrix.oro);
+            document.getElementById('price-fundador').innerText = formatPrice(matrix.fundador);
+
+            document.getElementById('extra-banner-price').innerText = `$${formatPrice(matrix.extraBanner)} ARS`;
+            document.getElementById('extra-video-price').innerText = `$${formatPrice(matrix.extraVideo)} ARS`;
+            document.getElementById('extra-news-price').innerText = `$${formatPrice(matrix.extraNews)} ARS`;
+            document.getElementById('extra-report-price').innerText = `$${formatPrice(matrix.extraReport)} ARS`;
+
+            // Update sub-labels for pricing details
+            if (currentPricingTier === 'rentable') {
+                document.getElementById('price-sub-bronce').innerText = "Tarifa recomendada de equilibrio";
+                document.getElementById('price-sub-plata').innerText = "Soporta altos márgenes operativos";
+                document.getElementById('price-sub-oro').innerText = "Exclusivo concesionarios principales";
+                document.getElementById('price-sub-fundador').innerText = "Beneficios ORO durante 6 meses completos";
+            } else {
+                document.getElementById('price-sub-bronce').innerText = "Sugerido según provincia";
+                document.getElementById('price-sub-plata').innerText = "Descuento 10% por pago anual";
+                document.getElementById('price-sub-oro').innerText = "1 Mes de regalo contratando 6 meses";
+                document.getElementById('price-sub-fundador').innerText = "Paga Plata y recibe Oro por 6 meses";
+            }
+        }
+
+        // Helper function to format price
+        function formatPrice(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+
+        // Calculate Simulation of Revenue & Breakeven
+        function calculateSimulator() {
+            const matrix = prices[currentPricingTier];
+
+            // Get inputs
+            const valBronce = parseInt(document.getElementById('input-bronce').value);
+            const valPlata = parseInt(document.getElementById('input-plata').value);
+            const valOro = parseInt(document.getElementById('input-oro').value);
+            const valFundador = parseInt(document.getElementById('input-fundador').value);
+
+            // Update numeric tags beside sliders
+            document.getElementById('val-bronce').innerText = valBronce;
+            document.getElementById('val-plata').innerText = valPlata;
+            document.getElementById('val-oro').innerText = valOro;
+            document.getElementById('val-fundador').innerText = valFundador;
+
+            // Update headers to show individual pricing in simulation
+            document.getElementById('sim-bronce-price-tag').innerText = `$${formatPrice(matrix.bronce)}`;
+            document.getElementById('sim-plata-price-tag').innerText = `$${formatPrice(matrix.plata)}`;
+            document.getElementById('sim-oro-price-tag').innerText = `$${formatPrice(matrix.oro)}`;
+            document.getElementById('sim-fundador-price-tag').innerText = `$${formatPrice(matrix.fundador)}`;
+
+            // Total revenue calculation
+            const totalRevenue = (valBronce * matrix.bronce) + 
+                                  (valPlata * matrix.plata) + 
+                                  (valOro * matrix.oro) + 
+                                  (valFundador * matrix.fundador);
+
+            const breakevenTarget = 1350000;
+            const statusNode = document.getElementById('financial-status');
+            const totalRevenueNode = document.getElementById('total-revenue');
+            const adviceNode = document.getElementById('simulator-advice');
+
+            totalRevenueNode.innerText = `$${formatPrice(totalRevenue)}`;
+
+            if (totalRevenue >= breakevenTarget) {
+                const superavit = totalRevenue - breakevenTarget;
+                statusNode.className = "font-montserrat font-bold text-sm sm:text-base px-2 py-1 rounded inline-block text-green-700 bg-green-100";
+                statusNode.innerText = `Superávit: +$${formatPrice(superavit)}`;
+                adviceNode.innerText = "¡Excelente! Lograste superar el Punto de Equilibrio mensual. El portal es financieramente viable y genera ganancias operativas.";
+            } else {
+                const deficit = breakevenTarget - totalRevenue;
+                statusNode.className = "font-montserrat font-bold text-sm sm:text-base px-2 py-1 rounded inline-block text-red-600 bg-red-100";
+                statusNode.innerText = `Déficit: -$${formatPrice(deficit)}`;
+                adviceNode.innerText = "Aún falta cubrir costos operativos. Recomendamos subir el mix de ventas para planes Oro, o implementar las Tarifas Rentables Recomendadas.";
+            }
+        }
+
+        // Arguments Tabs toggle logic
+        function toggleTab(tabId) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.add('hidden'));
+
+            // Show selected tab
+            document.getElementById(tabId).classList.remove('hidden');
+
+            // Toggle active classes on tab headers
+            const tabButtons = ['btn-tab-cambio', 'btn-tab-mercado', 'btn-tab-cpm', 'btn-tab-comparativa'];
+            tabButtons.forEach(btnId => {
+                const btn = document.getElementById(btnId);
+                if (btnId === `btn-${tabId}`) {
+                    btn.className = "py-2 px-3 text-xs font-bold border-b-2 border-brandGreen text-brandGreen whitespace-nowrap";
+                } else {
+                    btn.className = "py-2 px-3 text-xs font-bold border-b-2 border-transparent text-brandGray hover:text-brandGreen whitespace-nowrap";
+                }
+            });
+        }
+
+        // Calculate ROI for clients
+        function calculateROI() {
+            const impressions = parseFloat(document.getElementById('roi-impressions').value) || 0;
+            const ctr = parseFloat(document.getElementById('roi-ctr').value) || 0;
+            const conversion = parseFloat(document.getElementById('roi-conversion').value) || 0;
+
+            const clicks = impressions * (ctr / 100);
+            const leads = Math.round(clicks * (conversion / 100));
+
+            document.getElementById('roi-leads').innerText = leads;
+        }
+
+        // Forms selection helper from grid
+        function selectPack(packName) {
+            const radios = document.getElementsByName('selected_pack');
+            for (let i = 0; i < radios.length; i++) {
+                if (radios[i].value.toLowerCase() === packName.toLowerCase() || 
+                    (packName === 'Socio Fundador' && radios[i].value === 'Fundador')) {
+                    radios[i].checked = true;
+                    break;
+                }
+            }
+            updateFormCosts();
+            
+            // Scroll to form smoothly
+            document.getElementById('contratar').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Update wizard checkout and cost dynamically
+        function updateFormCosts() {
+            const matrix = prices[currentPricingTier];
+
+            // Update radio button label borders & internal values display
+            document.getElementById('form-bronce-price').innerText = `$${formatPrice(matrix.bronce)}/m`;
+            document.getElementById('form-plata-price').innerText = `$${formatPrice(matrix.plata)}/m`;
+            document.getElementById('form-oro-price').innerText = `$${formatPrice(matrix.oro)}/m`;
+            document.getElementById('form-fundador-price').innerText = `$${formatPrice(matrix.fundador)}/u`;
+
+            document.getElementById('form-extra-banner').innerText = `$${formatPrice(matrix.extraBanner)}`;
+            document.getElementById('form-extra-video').innerText = `$${formatPrice(matrix.extraVideo)}`;
+            document.getElementById('form-extra-news').innerText = `$${formatPrice(matrix.extraNews)}`;
+            document.getElementById('form-extra-report').innerText = `$${formatPrice(matrix.extraReport)}`;
+
+            const radios = document.getElementsByName('selected_pack');
+            let selectedPackValue = 'Bronce';
+            for (let i = 0; i < radios.length; i++) {
+                const label = document.getElementById(`label-pack-${radios[i].value.toLowerCase()}`);
+                if (radios[i].checked) {
+                    selectedPackValue = radios[i].value;
+                    label.className = "border-2 border-brandGreen bg-brandGreen/5 rounded-xl p-3 flex flex-col justify-between items-center text-center cursor-pointer transition select-none";
+                } else {
+                    label.className = "border-2 border-slate-200 rounded-xl p-3 flex flex-col justify-between items-center text-center cursor-pointer hover:border-brandGreen transition select-none";
+                }
+            }
+
+            // Calculation base
+            let basePrice = 0;
+            let contractDetail = "Contrato estándar de 3 meses";
+            
+            if (selectedPackValue === 'Bronce') {
+                basePrice = matrix.bronce;
+                contractDetail = "Mínimo 3 meses de permanencia";
+            } else if (selectedPackValue === 'Plata') {
+                basePrice = matrix.plata;
+                contractDetail = "Descuento del 10% disponible por pago anual";
+            } else if (selectedPackValue === 'Oro') {
+                basePrice = matrix.oro;
+                contractDetail = "1 Mes gratis incluido en plan semestral";
+            } else if (selectedPackValue === 'Fundador') {
+                basePrice = matrix.fundador;
+                contractDetail = "Inversión única - Beneficios por 6 meses";
+            }
+
+            // Extras
+            let extrasPrice = 0;
+            if (document.getElementById('add-banner').checked) extrasPrice += matrix.extraBanner;
+            if (document.getElementById('add-video').checked) extrasPrice += matrix.extraVideo;
+            if (document.getElementById('add-news').checked) extrasPrice += matrix.extraNews;
+            if (document.getElementById('add-report').checked) extrasPrice += matrix.extraReport;
+
+            const total = basePrice + extrasPrice;
+            document.getElementById('form-total-cost').innerText = `$${formatPrice(total)}`;
+            document.getElementById('form-contract-detail').innerText = contractDetail;
+        }
+
+        // Form submission simulation
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const feedback = document.getElementById('form-feedback');
+            feedback.classList.remove('hidden');
+        }
+
+        // Reset wizard
+        function resetForm() {
+            document.getElementById('pack-form').reset();
+            document.getElementById('form-feedback').classList.add('hidden');
+            updateFormCosts();
+        }
+
+        // Init page configurations on window load
+        window.onload = function() {
+            updatePriceDisplay();
+            calculateSimulator();
+            calculateROI();
+            updateFormCosts();
+        };
+    </script>
+</body>
+</html>
